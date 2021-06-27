@@ -13,7 +13,6 @@ const substitutionModule = (function () {
       for (let i = 0; i < 26; i++)
       {
         cipher[standardAlphabet[i]] = alphabet[i];
-        console.log(`standardAlphabet[i] :>> `, standardAlphabet[i]); // dbg..
         
       }
     } else
