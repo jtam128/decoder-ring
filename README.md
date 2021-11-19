@@ -4,7 +4,8 @@ This application allows the user to encode and decode messages using the polybiu
 
 # Link
 
-# Built With:
+# Technology & Tools
+Built with:
 * Test-driven Development
 * Mocha
 * Chai
