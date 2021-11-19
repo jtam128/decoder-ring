@@ -13,5 +13,3 @@ Built with:
 * Bootstrap 4
 * CSS
 * HTML
-
-# Screenshots
