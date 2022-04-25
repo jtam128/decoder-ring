@@ -52,14 +52,16 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="caesar-input">Your message:</label>
-                <textarea class="form-control" id="caesar-input" rows="3"
-                  placeholder="Examples: thinkful (to get an encoded message) OR wklqnixo (to get a decoded message)"
-                  autofocus="on" required></textarea>
+                <label for="caesar-input"><b>Your message:</b></label>
+                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
+                    message)</small>
+                </p>
+                <textarea class="form-control" id="caesar-input" rows="3" autofocus="on" required></textarea>
               </div>
               <div class="form-group">
-                <label for="caesar-shift">Shift number:</label>
-                <p><small><b>Note:</b> Enter any number or click on the increase or decrease buttons to the far right
+                <label for="caesar-shift"><b>Shift number:</b></label>
+                <p><small><b class="text-danger">**Note:</b> Type in the number OR click on the increase or decrease
+                    buttons to the far right
                     of
                     this
                     input
@@ -110,10 +112,10 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="polybius-input">Your message:</label>
-                <textarea class="form-control" id="polybius-input" rows="3"
-                  placeholder="Examples: thinkful (to get an encoded message) OR 4432423352125413 (to get a decoded message)"
-                  required></textarea>
+                <label for="polybius-input"><b>Your message:</b></label>
+                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
+                    message)</small></p>
+                <textarea class="form-control" id="polybius-input" rows="3" required></textarea>
               </div>
               <button class="btn btn-primary" type="submit">Submit</button>
             </form>
@@ -159,19 +161,22 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="substitution-input">Your message:</label>
-                <textarea class="form-control" id="substitution-input" rows="3"
-                  placeholder="Examples: thinkful (to get an encoded message) OR jrufscpw (to get a decoded message)"
-                  required></textarea>
+                <label for="substitution-input"><b>Your message:</b></label>
+                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
+                    message)</small>
+                </p>
+                <textarea class="form-control" id="substitution-input" rows="3" required></textarea>
               </div>
               <div class="form-group">
-                <label for="substitution-alphabet">Alphabet key:</label>
-                <p><small><b>Note:</b> The Alphabet Key must be <b>EXACTLY</b> 26 characters, which could include
+                <label for="substitution-alphabet"><b>Alphabet key:</b></label>
+                <p><small><b class="text-danger">**Note:</b> The Alphabet Key must be <b>EXACTLY</b> 26 characters,
+                    which could include
                     special
-                    characters(examples: #, $,
+                    characters(such as #, $,
                     *)
-                    <b>AND</b> the characters <b>CANNOT</b> appear more than once in each alphabet key submission
+                    <b>AND</b> the characters <b>CANNOT</b> appear more than once in each alphabet key entry
                   </small></p>
+                <p><small><b>Example:</b> xoyqmcgrukswaflnthdjpzibev</small></p>
                 <input type="text" class="form-control" id="substitution-alphabet" maxlength="26" required />
               </div>
               <button class="btn btn-primary" type="submit">Submit</button>
