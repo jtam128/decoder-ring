@@ -8,14 +8,13 @@
   <link rel="icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-
   <title>Decoder Ring - Home Page</title>
 </head>
 
 <body>
   <header class="container-fluid bg-light border-bottom text-light bg-dark">
     <nav class="row align-items-center">
-      <h1 class="h4 p-3">
+      <h1 class="h4 p-1">
         <a class="text-light nav-link active" href="index.html">Decoder Ring</a>
       </h1>
     </nav>
@@ -24,10 +23,10 @@
   <main class="container my-4">
     <!-- Caesar Shift -->
     <section class="row">
-      <div class="col">
+      <div class="col" id="caesarshift">
         <div class="card">
           <div class="card-header bg-info text-white">
-            <h2 class="my-2">Caesar Shift</h2>
+            <h2 class="h3 my-1">Caesar Shift</h2>
           </div>
           <div class="card-body">
             <p>
@@ -52,20 +51,14 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="caesar-input"><b>Your message:</b></label>
-                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
+                <label for="caesar-input" class="mb-0"><b>Your message:</b></label>
+                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR wklqnixo (to get a decoded
                     message)</small>
                 </p>
                 <textarea class="form-control" id="caesar-input" rows="3" autofocus="on" required></textarea>
               </div>
               <div class="form-group">
                 <label for="caesar-shift"><b>Shift number:</b></label>
-                <p><small><b class="text-danger">**Note:</b> Type in the number OR click on the increase or decrease
-                    buttons to the far right
-                    of
-                    this
-                    input
-                    field</small></p>
                 <input type="number" class="form-control" id="caesar-shift" required />
               </div>
               <button class="btn btn-primary" type="submit">Submit</button>
@@ -85,10 +78,10 @@
 
     <!-- Polybius -->
     <section class="row mt-4">
-      <div class="col">
+      <div class="col" id="polybius">
         <div class="card">
           <div class="card-header bg-warning">
-            <h2 class="my-2">Polybius Square</h2>
+            <h2 class="h3 my-1">Polybius Square</h2>
           </div>
           <div class="card-body">
             <p>
@@ -112,8 +105,8 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="polybius-input"><b>Your message:</b></label>
-                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
+                <label for="polybius-input" class="mb-0"><b>Your message:</b></label>
+                <p><small><b>Examples:</b> thinkful (to get an encoded message) OR 4432423352125413 (to get a decoded
                     message)</small></p>
                 <textarea class="form-control" id="polybius-input" rows="3" required></textarea>
               </div>
@@ -132,11 +125,11 @@
     </section>
 
     <!-- Substitution -->
-    <section class="row mt-4">
-      <div class="col">
+    <section class="row mt-4 substitution">
+      <div class="col" id="substitutioncipher">
         <div class="card">
           <div class="card-header bg-success text-white">
-            <h2 class="my-2">Substitution Cipher</h2>
+            <h2 class="h3 my-1">Substitution Cipher</h2>
           </div>
           <div class="card-body">
             <p>
@@ -161,15 +154,15 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="substitution-input"><b>Your message:</b></label>
+                <label for="substitution-input" class="mb-0"><b>Your message:</b></label>
                 <p><small><b>Examples:</b> thinkful (to get an encoded message) OR jrufscpw (to get a decoded
                     message)</small>
                 </p>
                 <textarea class="form-control" id="substitution-input" rows="3" required></textarea>
               </div>
               <div class="form-group">
-                <label for="substitution-alphabet"><b>Alphabet key:</b></label>
-                <p><small><b class="text-danger">**Note:</b> The Alphabet Key must be <b>EXACTLY</b> 26 characters,
+                <label for="substitution-alphabet" class="mb-0"><b>Alphabet key:</b></label>
+                <p class="mb-0"><small><b class="text-danger">**Note:</b> The Alphabet Key <b>MUST BE</b> 26 characters,
                     which could include
                     special
                     characters(such as #, $,
