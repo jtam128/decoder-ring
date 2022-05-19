@@ -12,7 +12,6 @@ Built with:
 * Chai
 * JavaScript
 * Bootstrap 4
-* CSS
 * HTML
 
 # Screenshots
